@@ -596,7 +596,6 @@ void setup() {
   Qukeys.setTimeout(160);
 
   static kaleidoscope::SpaceCadet::KeyBinding spacecadetmap[] = {
-    //By default, respect the default timeout
     {Key_LeftShift, Key_LeftParen, 160}
     , {Key_RightShift, Key_RightParen, 160}
     , {Key_LeftGui,Key_LeftCurlyBracket, 160}
