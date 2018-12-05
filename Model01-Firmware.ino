@@ -450,6 +450,7 @@ USE_MAGIC_COMBOS({.action = toggleKeyboardProtocol,
 // added in the order they're listed here.
 KALEIDOSCOPE_INIT_PLUGINS(
   Qukeys,
+  SpaceCadet,
 
   // The EEPROMSettings & EEPROMKeymap plugins make it possible to have an
   // editable keymap in EEPROM.
@@ -539,8 +540,6 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // nevertheless. Such as toggling the key report protocol between Boot (used
   // by BIOSes) and Report (NKRO).
   USBQuirks,
-
-  SpaceCadet,
 
   GamingMode,
   ActiveModColorEffect
