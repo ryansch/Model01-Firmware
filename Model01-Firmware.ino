@@ -606,7 +606,6 @@ void setup() {
     , SPACECADET_MAP_END
   };
   SpaceCadet.map = spacecadetmap;
-  SpaceCadet.immediately_send_key = true;
 
   GamingMode.gamingLayer = GAMING;
 }
