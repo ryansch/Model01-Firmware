@@ -592,7 +592,7 @@ void setup() {
 
   ActiveModColorEffect.highlight_color = CRGB(0, 160, 160);
 
-  Qukeys.setTimeout(160);
+  Qukeys.setHoldTimeout(160);
 
   static kaleidoscope::plugin::SpaceCadet::KeyBinding spacecadetmap[] = {
     {Key_LeftShift, Key_LeftParen, 160}
