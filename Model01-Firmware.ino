@@ -22,6 +22,7 @@
 
 // Support for communicating with the host via a simple Serial protocol
 #include "Kaleidoscope-FocusSerial.h"
+#include "Kaleidoscope-LED-Palette-Theme.h"
 
 // Support for keys that move the mouse
 #include "Kaleidoscope-MouseKeys.h"
@@ -460,6 +461,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
   // Focus allows bi-directional communication with the host, and is the
   // interface through which the keymap in EEPROM can be edited.
   Focus,
+  //LEDPaletteTheme,
 
   // FocusSettingsCommand adds a few Focus commands, intended to aid in
   // changing some settings of the keyboard, such as the default layer (via the
