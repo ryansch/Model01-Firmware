@@ -6,6 +6,11 @@ namespace kaleidoscope {
   uint8_t GamingMode::gamingLayer;
 
   void GamingMode::setGamingColors() {
+    // LEDOff is the first LEDMode
+    if (::LEDControl.get_mode_index() == 0) {
+      return;
+    }
+
     ::LEDControl.set_all_leds_to(CRGB(0, 0, 170));
 
     ::LEDControl.setCrgbAt(KeyAddr(1, 2), CRGB(170, 0, 0)); // w
