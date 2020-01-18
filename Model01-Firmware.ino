@@ -81,6 +81,8 @@
 
 #include "Kaleidoscope-LED-ActiveModColor.h"
 
+#include "Kaleidoscope-IdleLEDs.h"
+
 #include "GamingMode.h"
 
 /** This 'enum' is a list of all the macros used by the Model 01's firmware
@@ -482,6 +484,7 @@ KALEIDOSCOPE_INIT_PLUGINS(
 
   // LEDControl provides support for other LED modes
   LEDControl,
+  IdleLEDs,
 
   // We start with the LED effect that turns off all the LEDs.
   LEDOff,
@@ -513,10 +516,10 @@ KALEIDOSCOPE_INIT_PLUGINS(
 
   // The LED Palette Theme plugin provides a shared palette for other plugins,
   // like Colormap below
-  LEDPaletteTheme,
+  //LEDPaletteTheme,
 
   // The Colormap effect makes it possible to set up per-layer colormaps
-  ColormapEffect,
+  //ColormapEffect,
 
   // The numpad plugin is responsible for lighting up the 'numpad' mode
   // with a custom LED effect
